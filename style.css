@@ -1,0 +1,889 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* ----------------------------------------- NavBar ------------------------------- */
+
+
+.navbar{
+    margin-top: 1.5rem;
+    height: 6rem;
+}
+.navbar-brand img{    
+    width: 40%;
+}
+.navbar-nav{
+  margin-left: 35rem;
+}
+.nav-link {
+   
+    margin-left: 1rem;
+    text-align: center;
+    padding-right: 6px;
+    font-size: 1.6rem;
+    color: #3E3D3D;
+    text-decoration: underline;
+    justify-self: center;
+}
+ 
+.btn{
+   border: #3ea8e6;
+   margin-left: 4rem;
+    color:#ffff;
+    width: 13.5rem;
+    height: 3.5rem;
+    background-color: #00BAFA;
+    font-size: 1.6rem;
+}
+
+
+/* ----------------------------------------- Header ------------------------------- */
+
+.header{
+    background-color: #00BAFA;
+    height: 50rem;
+    width: 100%;
+}
+
+.header__heading{
+    padding-left: 6rem;
+    padding-top: 25%;
+    color: #ffff;
+    font-size: 4.8rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    animation-name: heartBeat;
+    animation-duration: 2s;
+}
+
+.header__text{
+    padding-left: 6rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 2.5rem;
+    font-family: 'Poppins';
+}
+
+.header__buttons{
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content:center;
+    align-items: center;
+    padding-right: 6.5rem;
+}
+
+.header__startbtn{
+    background-color: #fff;
+    color: #00BAFA;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 16.5rem;
+    height: 4.5rem;
+   text-align: center;
+   border: 1px solid white;
+}
+
+.header__portfoliobtn{
+    background-color: #00BAFA;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 16.5rem;
+    height: 4.5rem;
+   text-align: center;
+   border: 1px solid white;
+}
+
+.header__image{
+    width: 50rem;
+    height: 50rem;
+    padding-top: 10%;
+    margin-left: 5rem;
+    animation-name: backInRight;
+    animation-duration: 2s;
+}
+
+
+/* ----------------------------------------- Award Part ------------------------------- */
+
+.award{
+    height: 25rem;
+    margin-top: 8rem;
+}
+.award__text{
+    color: #00BAFA;
+    font-weight: 400;
+   font-size: 2rem;
+   font-family: 'Poppins';
+}
+
+.award__text::before{
+    content: ""; 
+  display: inline-block; 
+  width: 3.5rem; 
+  height: 50%;
+  margin-right: 1rem; 
+  vertical-align: middle;
+  border: 1px solid #00BAFA;
+}
+
+.award__heading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 3rem;
+line-height: 5rem;
+letter-spacing: .5rem;
+color: #4A4949;
+}
+
+.award__side-text{
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+  font-size: 1.8rem;
+  color: #6D7D8B;
+  margin-left: 6rem;
+}
+
+.award__about-btn{
+    background-color: #fff;
+    color: #00BAFA;
+    border: 2px solid #00BAFA;
+    font-size: 1.6rem;
+    width: 15.5rem;
+    height: 4rem;
+   text-align: center;
+   margin-left: 6rem;
+}
+
+
+/* -----------------------------------------Services Section ------------------------------- */
+
+.services{
+    background-color: #00BAFA;
+    height: 40rem;
+    width: 100%;
+    padding: 6rem;
+    position: relative;
+}
+
+.services__text{
+    color: #fff;
+    font-weight: 400;
+   font-size: 2rem;
+   font-family: 'Poppins';
+}
+
+.services__text::before{
+    content: ""; 
+    display: inline-block; 
+    width: 3.5rem; 
+    height: 50%;
+    margin-right: 1rem; 
+    vertical-align: middle;
+    border: 1px solid #fff;
+}
+.services__heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.3rem;
+    color: #fff;
+}
+
+.services__image{
+    width:37.4rem;
+    height: 20rem;
+    margin-bottom: 13rem;
+    position: absolute;
+}
+
+.web, .custom, .digital{
+    margin-top: 3.5rem;
+    height: 43rem;
+    width: 28rem;
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+}
+.app{
+    margin-top: 3.5rem;
+    height: 43rem;
+    width: 28rem;
+    background-image: linear-gradient(123deg, #71CFE3 50%, #94DAE9 50%);
+    padding: 2rem;
+    border: 1px solid #EEEEEE;
+border-radius: 8px;
+}
+.blockchain, .dedicatedTeam{
+    margin-top: 3.5rem;
+    height: 43rem;
+    width: 28rem;
+    background-image: linear-gradient(123deg, #71CFE3 50%, #94DAE9 50%);
+    padding: 2rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+}
+
+.web__heading, .app__heading, .custom__heading,
+.digital__heading, .blockchain__heading, .dedicatedTeam__heading
+{
+    color: #4A4949;
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 2.2rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+}
+
+.web__text, .app__text, .custom__text,
+.digital__text, .blockchain__text, .dedicatedTeam__text
+{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 2.5rem;
+}
+
+.web__list li, .app__list li, .custom__list li,
+.digital__list li, .blockchain__list li, .dedicatedTeam__list li
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.web__btn, .app__btn, .custom__btn,
+.dedicatedTeam__btn, .blockchain__btn, .digital__btn
+{
+    background-color: #fff;
+    color: #00BAFA;
+    border: 2px solid #00BAFA;
+    font-size: 1.6rem;
+    width: 13rem;
+    height: 4rem;
+   text-align: center; 
+   margin-top: 1.5rem;  
+}
+/* ----------------------------------------- How it works ------------------------------- */
+
+.work{
+    margin-top: 85rem;
+}
+.work__heading{
+    color: #4A4949;
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 3.5rem;
+   margin-bottom: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+.work__image{
+    width: 40rem;
+    height: 40rem;
+    margin-top: 5rem;
+    animation-name: backInRight;
+    animation-duration: 2s;
+}
+
+.work__steps{
+    margin-top: 4rem;
+    padding-left: 10rem;
+}
+.work__heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #4A4949;
+    display: flex;
+}
+.work__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #6D7D8B;
+}
+
+.dot{
+    align-self: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #00BAFA;
+    margin-right: 1rem;
+    margin-left: -2rem;
+}
+/* -----------------------------------------Core Tecnologies ------------------------------- */
+
+.core{
+    margin-top: 10rem;
+}
+.text{
+    color: #00BAFA;
+    font-weight: 400;
+   font-size: 2rem;
+   font-family: 'Poppins';
+}
+
+.text::before{
+    content: ""; 
+  display: inline-block; 
+  width: 3.5rem; 
+  height: 50%;
+  margin-right: 1rem; 
+  vertical-align: middle;
+  border: 1px solid #00BAFA;
+}
+.core__heading{
+    color: #4A4949;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 3.5rem;
+margin-bottom: 2.5rem;
+}
+
+.box{
+    width: 40rem;
+    height: 42rem;
+    background-color: #00BAFA;
+}
+
+.box__text{
+    padding-top: 2rem;
+}
+
+.minus, .plus{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius:50%;
+    background-color: #4A4949;
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid #4A4949;
+    margin-top: .3rem;
+    margin-left: -1.5rem;
+    margin-right: 1rem;
+    padding: 0;
+}
+.box__front-end{
+    display: flex;
+    padding-left: 2rem;
+    width: 25rem;
+    height: 2.5rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    color: #4A4949;
+}
+
+.box__back-end,.box__mobile,.box__database,.box__cms,.box__cloud
+,.box__blockchain,.box__full-stack{
+    padding-left: 2rem;
+    width: 25rem;
+    height: 2.5rem;
+    background-color: #80DCFD;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    color: #fff;
+    display: flex;
+}
+
+
+ .images img{
+    width: 12rem;
+     height: 10rem;
+     margin:1.5rem .1rem;
+ }
+
+ .whole{
+    border: 1px solid #3E3D3D;
+ }
+
+ /* -----------------------------------------Choose the best suitable------------------- */
+
+ .best{
+    margin-top: 10rem;
+    background-color: #00BAFA;
+    padding: 5rem;
+    height: 40rem;
+}
+.best__text{
+    color: #fff;
+    font-weight: 400;
+   font-size: 2rem;
+   font-family: 'Poppins';
+}
+
+.best__text::before{
+    content: ""; 
+  display: inline-block; 
+  width: 3.5rem; 
+  height: 50%;
+  margin-right: 1rem; 
+  vertical-align: middle;
+  border: 1px solid #fff;
+}
+
+.best__heading{
+
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 4rem;
+   color: #fff;
+}
+
+.dedicated,.fixed-cost{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    width: 45rem;
+    height: 45rem;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+.dedicated__heading, .fixed__heading{
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 3.2rem;
+   margin-top: 2rem;
+   color: #00BAFA;
+}
+.dedicated__text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+margin-top: 2rem;
+line-height: 2.6rem;
+color: #6D7D8B;
+}
+.fixed__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 2.8rem;
+    color: #6D7D8B;
+}
+
+.dedicated__btn,.fixed__btn{
+    background-color: #fff;
+    color: #00BAFA;
+    border: 2px solid #00BAFA;
+    font-size: 1.6rem;
+    width: 17.5rem;
+    height: 4rem;
+   text-align: center;
+   margin-top: 5rem;
+  
+}
+
+.dedicated__image,.fixed__image{
+
+    width: 8rem;
+    height: 8rem;
+}
+
+
+/* ----------------------------------------- Slider ------------------------------- */
+
+.sli{
+    margin-top: 30rem;
+}
+.sli__text{
+    color: #00BAFA;
+    font-weight: 400;
+   font-size: 2rem;
+   font-family: 'Poppins';
+}
+.sli__text::before{
+    content: ""; 
+  display: inline-block; 
+  width: 3.5rem; 
+  height: 50%;
+  margin-right: 1rem; 
+  vertical-align: middle;
+  border: 1px solid #00BAFA;
+}
+
+.sli__heading{
+
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 4rem;
+   color: #4A4949;
+}
+
+
+.slider {
+    
+    max-width: 60rem;
+    height: 70rem;
+    position: relative;
+   transform: scale(.9);
+    /* IN THE END */
+    /* overflow:hidden; */
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 40rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+
+  #slide2{
+    margin-left: -15rem;
+  }
+
+  #slide3{
+    margin-left: -30rem;
+  }
+
+  #slide4{
+    margin-left: -45rem;
+  }
+
+  .slide > img {
+    /* Only for images that have different size than slide */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+  }
+  
+  .slider__btn--left {
+    margin-top: 5rem;
+    right:-75rem;
+    font-size: 6rem;
+    color: #00BAFA;
+    cursor: pointer;
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  .slider__btn--right {
+    cursor: pointer;
+    margin-top: 5rem;
+    right:-68rem;
+    color: #00BAFA;
+    font-size: 6rem;
+    /* transform: translate(50%, -50%); */
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dots__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+  
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+  }
+  
+  .dots__dot:last-child {
+    margin: 0;
+  }
+  
+  .dots__dot--active {
+    /* background-color: #fff; */
+    background-color: #888;
+    opacity: 1;
+  }
+  
+  /* TESTIMONIALS */
+  .testimonial {
+    width: 65%;
+    position: relative;
+    
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 2rem;
+  }
+  
+  /* .testimonial::before {
+    content: '\201C';
+    position: absolute;
+    top: -5.7rem;
+    left: -6.8rem;
+    line-height: 1;
+    font-size: 20rem;
+    font-family: inherit;
+    color: var(--color-primary);
+    z-index: -1;
+  } */
+  
+  .testimonial__header {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .testimonial__text {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+    color: #666;
+  }
+  
+  .testimonial__author {
+    margin-left: 3rem;
+    font-style: normal;
+  
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 2rem;
+  }
+  
+  .testimonial__photo {
+    grid-row: 1 / span 2;
+    width: 6.5rem;
+    border-radius: 50%;
+  }
+  
+  .testimonial__name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    align-self: end;
+    margin: 0;
+  }
+  
+  .testimonial__location {
+    font-size: 1.5rem;
+  }
+  
+  .section__title--testimonials {
+    margin-bottom: 4rem;
+  }
+
+
+/* -----------------------------------------Shedule ------------------------------- */
+
+.shedule{
+    margin-top:-13rem;
+    background-color: #00BAFA;
+    margin-left:11rem;
+    margin-right: 11rem;
+    margin-bottom: 3rem;
+    height: 25vh;
+    border-radius: 3px;
+}
+
+.shedule__text{
+text-align: center;
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.8rem;
+  color: #fff;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  padding-top: 4rem;
+}
+
+.shedule__btn{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+line-height: 2.4rem;
+color: #4A4949;
+margin-top: 4.5rem;
+padding: .5rem;
+background: #FFFFFF;
+border-radius: .5rem;
+border: 1px solid #FFFFFF;
+}
+
+
+
+/* -----------------------------------------Footer ------------------------------- */
+
+.footer{
+    background-color: #3E3D3D;
+    height: 45vh;
+    width: 100%;
+    color: #DAE3EA;
+    margin-top: 6rem;
+    padding-top: 4rem;
+}
+
+.footer__logo{
+    padding-right: 2rem;
+    width: 16.8rem;
+    height: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.footer__text{
+font-style: normal;
+font-weight: 200;
+font-size: 1.2rem;
+line-height: 2.1rem;
+
+}
+
+.company{
+    padding-left: 9rem;
+}
+
+.company__heading{
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 800;
+font-size: 1.6rem;
+line-height: 2rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+margin-bottom: 2rem;
+}
+
+.company__list{
+    margin: 0;
+    padding: 0;
+}
+.company__list li{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+
+.service__heading{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    
+}
+
+.service__list{
+    margin: 0;
+    padding: 0;
+}
+.service__list li{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+
+.ito__heading{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.ito__list{
+    margin:0;
+    padding:0;
+}
+ .ito__list li{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.contact__heading{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+.contact__details{
+    margin: 0;
+    padding: 0;
+}
+.logos{
+   margin: 0;
+   padding: 0;
+    display: flex;
+    gap: .7rem;
+}
+
+.logos li {
+    list-style-type: none;
+}
